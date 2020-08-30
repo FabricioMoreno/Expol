@@ -1,0 +1,72 @@
+/*------------------------------------------------------
+                          HEADER
+--------------------------------------------------------*/
+.header {
+  display: flex;
+}
+/*------------------------------------------------------
+                        Subjects
+--------------------------------------------------------*/
+.subjects
+{
+  display: grid;
+  grid-template-columns: auto auto;
+  /* justify-items: center; */
+  align-items: center;
+  text-align: center;
+  
+}
+.subjects div
+{
+  height: 200px;
+  cursor: pointer;
+}
+
+/*------------------------------------------------------
+                        communication
+--------------------------------------------------------*/
+.communication-subject
+{
+background-color: rebeccapurple;
+}
+.communication-subject:hover
+{
+  background-image: url(../assets/svg/user-friends-solid.svg);
+  background-color: yellow;
+
+}
+/*------------------------------------------------------
+                          math
+--------------------------------------------------------*/
+.math-subject
+{
+  background-color: aqua;
+}
+.math-subject:hover
+{
+  background-image: url(../assets/svg/calculate-24px.svg);
+  background-size: 200px;
+}
+/*------------------------------------------------------
+                          physics
+--------------------------------------------------------*/
+.physics-subject
+{
+  background-color: aqua;
+}
+.physics-subject:hover
+{
+  background-image: url(../assets/svg/atom-solid.svg);
+}
+/*------------------------------------------------------
+                          chemistry
+--------------------------------------------------------*/
+.chemistry-subject
+{
+  background-color: aqua;
+}
+.chemistry-subject:hover
+{
+  background-image: url(../assets/svg/science-24px.svg);
+  background-size: 200px;
+}
