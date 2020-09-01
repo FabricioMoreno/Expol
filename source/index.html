@@ -1,36 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- Normalize.css -->
     <link rel="stylesheet" href="./css/normalize.css">
+    <!-- My Stylus -->
     <link rel="stylesheet" href="./css/effects.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <div>
+    <div class="main">
         <header class="header">
-            <h1>Titulo</h1>
+            <div class="banner">
+                <div class="banner-image">
+                    <div class="banner-inner-container">
+                        <h1>Titulo</h1>
+                        <h2>Tu repositario online </h2>
+                    </div>                    
+                </div>
+            </div>
         </header>
-        <section class="subjects">
-            <div class="communication-subject hvr-fade move-svg-effect">
-                <p>Imagen</p>
-                <h2>Comunicaci&#243n</h2>
-            </div>
-            <div class="math-subject hvr-fade move-svg-effect">
-                <p>Imagen</p>
-                <h2>Matem&#225tica</h2>
-            </div>
-            <div class="physics-subject hvr-fade move-svg-effect">
-                <p>Imagen</p>
-                <h2>F&#237sica</h2>
-            </div>
-            <div class="chemistry-subject hvr-fade move-svg-effect">
-                <p>Imagen</p>
-                <h2>Qu&#237mica</h2>
-            </div>
+        <div class="select">
+            <p>Seleccione una materia para estudiar:</p>
+            <hr id="hr">
+        </div>
+        <section class="subjects" id="subjects">
+            <!--communication-->
+            <a href="./html/communication.html">
+                <div class="communication-subject hvr-fade move-svg-effect">
+                    <h2>Comunicaci&#243;n</h2>
+                </div>
+            </a>
+            <!--Math-->
+            <a href="./html/math.html">
+                <div class="math-subject hvr-fade move-svg-effect">
+                    <h2>Matem&#225;tica</h2>
+                </div>
+            </a>
+            <!--Physics-->
+            <a href="./html/physics.html">
+                <div class="physics-subject hvr-fade move-svg-effect">
+                    <h2>F&#237;sica</h2>
+                </div>
+            </a>
+            <!--Chemistry-->
+            <a href="./html/chemistry.html">
+                <div class="chemistry-subject hvr-fade move-svg-effect">
+                    <h2>Qu&#237;mica</h2>
+                </div>
+            </a>
         </section>
+        <script src="./js/effects.js"></script>
+        <footer class="footer">
+            <div class="footer-text">
+                
+                <p>Developed with ❤ by Fabricio Moreno |
+                SOMOS ESPOL &copy; 
+                    <script>document.write( new Date().getUTCFullYear() );</script>
+                </p>
+            </div>
+            <div class="footer-options">
+                <ul>
+                    <li><a href="">About</a></a></li>
+                    <li><a href="">Terms of Use</a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

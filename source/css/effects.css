@@ -16,6 +16,8 @@ transition-property: color, background-color;
 .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
 background-color: #2098D1;
 color: white;
+box-shadow: 0 0 45px black;
+text-shadow: 0 0 10px black;
 }
 /*------------------------------------------------------
                         Move SVG

@@ -1,8 +1,77 @@
+:root{
+  --main-color: #ADADAD;
+  --secondary-color:#2E1114;
+  --third-color:#83677B;
+  --fourth-color:#501B1D;
+}
+.main
+{
+  width: 100%;
+}
 /*------------------------------------------------------
                           HEADER
 --------------------------------------------------------*/
 .header {
+
+  width: 100%;
+  text-align: center;
+
+  font-family: 'EB Garamond', serif;
+  font-size:6.5vh;
+  font-style: italic;
+
+  box-shadow: 0  0 8px gray;
+}
+
+.banner .banner-image
+{
   display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 500px;
+
+  background-image: url(../assets/images/banner-min.jpg);
+  background-position-y: 500px;
+  overflow:hidden;
+  background-size: cover;
+}
+.banner .banner-image .banner-inner-container
+{
+
+  color: white;
+
+}
+.banner .banner-image .banner-inner-container h1,.banner .banner-image .banner-inner-container h2
+{
+  margin: 0;
+}
+/*------------------------------------------------------
+                        Select
+--------------------------------------------------------*/
+.select
+{
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'EB Garamond', serif;
+  font-weight: bolder;
+  font-size:35px;
+  text-shadow: 1.9px 1px 0.2px rgb(77, 70, 70);
+
+  color: var(--main-color);
+}
+.select hr{
+  width: 50%;
+  height: 8px;
+  background-color: var(--fourth-color);
+  outline:none;
+  border: none;
+
+  transition-property: all;
+  transition-duration: 0.5s;
 }
 /*------------------------------------------------------
                         Subjects
@@ -10,16 +79,29 @@
 .subjects
 {
   display: grid;
-  grid-template-columns: auto auto;
-  /* justify-items: center; */
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   text-align: center;
-  
+
+  font-size: 4vh;
+  font-family: 'EB Garamond', serif;
+  font-weight:600 ;
+
 }
-.subjects div
+.subjects a
 {
-  height: 200px;
-  cursor: pointer;
+  text-decoration: none;
+}
+.subjects a div
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 210px;
+  width: 100%;
+
+  box-shadow: inset 0 0 7px gray;
 }
 
 /*------------------------------------------------------
@@ -27,46 +109,100 @@
 --------------------------------------------------------*/
 .communication-subject
 {
-background-color: rebeccapurple;
+background-color: #DE6723;
+color: #6e300c;
+
 }
 .communication-subject:hover
 {
   background-image: url(../assets/svg/user-friends-solid.svg);
-  background-color: yellow;
-
+  background-color: #c7662d;
 }
 /*------------------------------------------------------
                           math
 --------------------------------------------------------*/
 .math-subject
 {
-  background-color: aqua;
+  background-color: #9326E0;
+  color: #3e0766;
 }
 .math-subject:hover
 {
   background-image: url(../assets/svg/calculate-24px.svg);
   background-size: 200px;
+  background-color: #6c24a0;
 }
 /*------------------------------------------------------
                           physics
 --------------------------------------------------------*/
 .physics-subject
 {
-  background-color: aqua;
+  background-color: #42DBD9;
+  color: #045250;
 }
 .physics-subject:hover
 {
   background-image: url(../assets/svg/atom-solid.svg);
+  background-color: #31a5a3;
 }
 /*------------------------------------------------------
                           chemistry
 --------------------------------------------------------*/
 .chemistry-subject
 {
-  background-color: aqua;
+  background-color: #C4DB16;
+  color: #464e05;
 }
 .chemistry-subject:hover
 {
   background-image: url(../assets/svg/science-24px.svg);
   background-size: 200px;
+  background-color: #97a812;
+}
+/*------------------------------------------------------
+                        Footer
+--------------------------------------------------------*/
+.footer
+{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  box-sizing: border-box;
+  margin-top: 50px;
+  padding-left: 30px;
+  padding-right: 60px;
+
+  background-color: var(--secondary-color);
+  color: white;
+
+  font-family: 'EB Garamond', serif;
+  font-weight: 100;
+  font-size: 10.5px;
+
+  box-shadow: 0 0 15px gray;
+}
+.footer-options ul
+{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+
+}
+.footer-options li
+{
+  margin-left: 15px;
+}
+.footer-options a
+{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.footer-options a:hover
+{
+  text-decoration: underline;
 }
