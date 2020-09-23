@@ -16,11 +16,14 @@ export default function elementOptions (){
         },
         addLink:function(link,nameLink){
             linksTopic+=`
-            <a href=${link}>${nameLink}</a>
+            <a href=${link} target="_blank">${nameLink}</a>
             ` 
         },
+        addTitleTopic:function(title){
+            titleTopic +=`<h2 class='topic_mainTitle'>${title}</h2>`
+        },
         addTitle:function(title){
-            titleTopic +=`<h2>${title}</h2>`
+            linksTopic+=`<h2 class='topic_title'>${title}</h2>`
         },
         //Construye cada tema en un solo div
         buildDivElement:function(){
