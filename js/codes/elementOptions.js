@@ -1,5 +1,5 @@
 export default function elementOptions (){
-    let bodyHtml = document.getElementById('main')
+    let bodyHtml = document.getElementById('allTopics')
     let titleTopic = '';
     let linksTopic = ''
     let innerDivTopic ='';
@@ -16,19 +16,19 @@ export default function elementOptions (){
         },
         addLink:function(link,nameLink){
             linksTopic+=`
-            <a href=${link} target="_blank">${nameLink}</a>
+            <p class='links_single'><a href=${link} target="_blank">${nameLink}</a></p>
             ` 
         },
         addTitleTopic:function(title){
-            titleTopic +=`<h2 class='topic_mainTitle'>${title}</h2>`
+            titleTopic +=`<h2 class='headerTopic_title'>${title}</h2>`
         },
         addTitle:function(title){
-            linksTopic+=`<h2 class='topic_title'>${title}</h2>`
+            linksTopic+=`<h3 class='links_title'>${title}</h3>`
         },
         //Construye cada tema en un solo div
         buildDivElement:function(){
             innerDivTopic =`
-            <header>
+            <header class='headerTopic'>
                 ${titleTopic} 
             </header>
             <div class="links">
