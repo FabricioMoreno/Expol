@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*-----------------------------------------------------------
+                        MAIN HEADER
+-----------------------------------------------------------*/
+header.mainHeader
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-bottom: 20px;
+    box-shadow: 0  0 8px gray;
+}
+
+header.mainHeader .mainHeader_title
+{
+    font-family: 'EB Garamond', serif;
+    font-size:90px;
+    font-style: italic;
+    color: white;
+    text-shadow: 0 0 8px gray;
+}
+/*-----------------------------------------------------------
+                CHARACTERISTICS OF ALL SUBJECTS
+-----------------------------------------------------------*/
+.allTopics
+{
+    /* padding-left: 8.5px; */
+    
+}
+/*-----------------------------------------------------------
+                    EACH TOPIC OF THE SUBJECT
+-----------------------------------------------------------*/
+.allTopics .topic
+{
+    margin-bottom: 18px;
+    /* border-bottom: 2px gray solid; */
+}
+.allTopics .topic:last-child{
+    border-bottom: none;
+}
+.allTopics .topic header.headerTopic
+{
+    padding: 10px 0 10px 0;
+    margin-bottom: 15px;
+    text-align: center;
+
+    border-top: 3px gray solid;
+    border-bottom: 3px gray solid;
+}
+.allTopics .topic header.headerTopic h2.headerTopic_title
+{
+    font-family: 'EB Garamond', serif;
+    font-weight: bolder;
+    font-size:30px;
+    text-shadow: 0 0 1.02px gray;
+}
+/*-----------------------------------------------------------
+                CHARACTERISTICS OF ALL LINKS
+-----------------------------------------------------------*/
+.allTopics .topic div.links
+{
+    padding-left: 8.5px;
+    /* background-color: aqua; */
+}
+.allTopics .topic div.links h3
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    font-size: 23px;
+    font-family: 'EB Garamond', serif;
+}
+/*-----------------------------------------------------------
+                CHARACTERISTICS OF EACH LINKS
+-----------------------------------------------------------*/
+.allTopics .topic div.links p.links_single
+{
+    margin-bottom: 18px;
+
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
+    font-size: 17px;
+}
+.allTopics .topic div.links p.links_single a
+{
+    text-decoration: none;
+}
+.allTopics .topic div.links p.links_single a:hover
+{
+    text-decoration: underline;
+}
+.allTopics .topic div.links p.links_single a:link,
+.allTopics .topic div.links p.links_single a:visited,
+.allTopics .topic div.links p.links_single a:active
+{
+    color: rgb(22, 21, 21);
+}

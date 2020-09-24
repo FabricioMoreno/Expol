@@ -28,7 +28,7 @@ for(let topic in links){
         loopInVideos= loop,
         loopInExtras= loop,
         loopInExercises = loop
-
+    element.addTitle('Teor&#237a Fundamentada')
     loopInClasses(topic,'classes')
 
     if(myTopic['videos']){
