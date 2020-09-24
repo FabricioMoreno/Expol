@@ -1,0 +1,19 @@
+header.mainHeader
+{
+    background-color: #9326E0;
+}
+header.mainHeader .mainHeader_title{
+    font-size: calc(2.8rem + 5vw);
+}
+.allTopics .topic header.headerTopic h2.headerTopic_title
+{
+    color: #3e0766;
+}
+
+.allTopics .topic div.links h3
+{
+    color: #220835;
+}
+.allTopics .topic div.links p.links_single a:hover{
+    text-decoration-color:#220835;
+}

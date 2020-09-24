@@ -99,3 +99,6 @@ header.mainHeader .mainHeader_title
 {
     color: rgb(22, 21, 21);
 }
+.allTopics .topic div.links p.links_single a:focus{
+    color:#d6d0d0 ;
+}
