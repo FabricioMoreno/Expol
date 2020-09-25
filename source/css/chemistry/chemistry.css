@@ -3,7 +3,7 @@ header.mainHeader
     background-color: #C4DB16;
 }
 header.mainHeader .mainHeader_title{
-    font-size: 110px;
+    font-size: calc(2.8rem + 5vw);
 }
 .allTopics .topic header.headerTopic h2.headerTopic_title
 {
