@@ -174,8 +174,8 @@ color: #6e300c;
 
   box-sizing: border-box;
   margin-top: 50px;
-  padding-left: 30px;
-  padding-right: 60px;
+  padding-left: 10px;
+  padding-right: 13px;
 
   background-color: var(--secondary-color);
   color: white;
