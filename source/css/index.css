@@ -22,7 +22,10 @@
 
   box-shadow: 0  0 8px gray;
 }
-
+.header h1
+{
+  text-transform: uppercase;
+}
 .banner .banner-image
 {
   display: flex;
