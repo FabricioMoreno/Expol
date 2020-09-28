@@ -190,6 +190,9 @@ color: #6e300c;
 
   box-shadow: 0 0 15px gray;
 }
+.footer-options{
+  text-align: center;
+}
 .footer-options ul
 {
   list-style-type: none;
